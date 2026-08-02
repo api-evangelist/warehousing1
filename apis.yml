@@ -1,8 +1,28 @@
 aid: warehousing1
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/warehousing1.png
 name: Warehousing1
-description: 'Warehousing1 is a company surfaced as a portfolio company of hv-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: marketplace; ai-enterprise-software. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: 'Warehousing1 is a Berlin-based LogTech company, founded in 2018 by Nico
+  Szeli, Nils Aschmann and Fabian Sedlmayr, that operates a digital fulfillment and
+  warehousing marketplace connecting brands and e-commerce merchants to an independent
+  network of more than 1,000 logistics locations across Germany, Europe and the US.
+  Its cloud platform and customer portal centralize warehousing, order picking, packing
+  and shipping, and integrate with common ERP systems, online shops and marketplaces
+  so companies can scale contract logistics, distribution and e-commerce fulfillment.
+  The company has served 500+ customers and is backed by HV Capital, Schenker Ventures,
+  Aster Capital and Wille Finance. Warehousing1 does not publish a public developer
+  API; integration is delivered through managed ERP/shop connectors and its customer
+  portal.'
 url: https://raw.githubusercontent.com/api-evangelist/warehousing1/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +32,34 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Marketplace; Ai Enterprise Software
+- Fulfillment
+- Warehousing
+- Logistics
+- E-Commerce
+- Supply Chain
+- 3PL
+- Marketplace
+- Germany
 apis: []
+common:
+- type: DomainSecurity
+  url: security/warehousing1-domain-security.yml
+- type: Website
+  url: https://warehousing1.com/en
+- type: Blog
+  url: https://warehousing1.com/blog/en
+- type: Login
+  url: https://app.warehousing1.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
